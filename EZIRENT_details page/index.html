@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./resources/style.css" />
+  </head>
+  <body>
+    <!-- nav here -->
+    <nav class="shadow-xxlg py-3">
+      <div
+        class="container navbar justify-content-between navbar-expand-lg bg-body-tertiary"
+      >
+        <h2 class="logo mx-1">EZIRENT</h2>
+        <form action="" class="search rounded-5 px-4 py-1 shadow-xxlg">
+          <input type="text" placeholder="location" class="location" />
+          |
+          <input type="text" placeholder="Type of house" class="house-type" />
+          <button type="submit" class="btn rounded-5 px-4">Search</button>
+        </form>
+        <div class="user-menue rounded-5 px-3 py-2 shadow-xxlg">
+          <i class="fas fa-user"></i>
+          <i class="fas fa-bars" onclick="hideShowNav()"></i>
+          <i class="fas fa-x hide-icon" onclick="hideShowNav()"></i>
+        </div>
+      </div>
+      <ul class="navs hide container">
+        <form action="" class="sm-search">
+          <input type="text" placeholder="location" class="location" />
+          <input type="text" placeholder="Typle of house" class="house-type" />
+          <button type="submit" class="rounded-5 btn px-4">Search</button>
+        </form>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Catheories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="container mt-5 images-part">
+      <h2 class="section-title">grace homes and buildings</h2>
+      <p class="details gry-crl">kotto Bonamoussadi, Douala</p>
+      <div class="images row">
+        <div class="col-lg-6 col-md-12 col-sm-12 my-2 img-container">
+          <img class="img-1 my-2" src="./resources/images/house1.JPG" alt="" />
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 my-2 img-container">
+          <div class="row devider">
+            <div class="col-lg-7 col-md-6 col-sm-12 img-container">
+              <img class="my-2" src="./resources/images/house2.JPG" alt="" />
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 img-container">
+              <img
+                class="img my-2"
+                src="./resources/images/house3.JPG"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="row devider my-2">
+            <div class="col-lg-7 col-md-6 col-sm-12 img-container">
+              <img
+                class="img my-2"
+                src="./resources/images/house4.JPG"
+                alt=""
+              />
+            </div>
+            <div
+              style="position: relative"
+              class="col-lg-5 col-md-6 col-sm-12 img-container"
+            >
+              <img
+                class="img my-2"
+                src="./resources/images/house1.JPG"
+                alt=""
+              />
+              <a
+                href=""
+                style="position: absolute; top: 80%; right: 5%; opacity: 0.9"
+                class="btn btn-primary px-2"
+                >See all images</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="description gry-crl">
+        2 bedrooms 2 bathrooms 1 kitchen 1livingroom
+      </p>
+    </section>
+    <section class="container about-house">
+      <div class="row">
+        <div class="left col-lg-7 col-md-6">
+          <div class="about">
+            <h2 class="about-title">About the home</h2>
+            <p class="about-details gry-crl">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              natus fugit voluptate, placeat, nobis ducimus laudantium sint eum
+              in omnis ad deleniti soluta aut fugiat quia suscipit itaque
+              officia alias tenetur temporibus maxime. Amet, voluptates
+              temporibus laudantium eum voluptate molestias iste atque
+              necessitatibus facere hic labore veritatis odit odio culpa.
+            </p>
+          </div>
+          <div class="what-place-offers">
+            <h2>What this place offers</h2>
+            <div class="row mt-5 gry-crl">
+              <div class="col-3">
+                <p>hot water</p>
+                <p>gate man</p>
+                <p>parking spot</p>
+                <p>security</p>
+              </div>
+              <div class="col-3 gry-crl">
+                <p>hot water</p>
+                <p>gate man</p>
+                <p>parking spot</p>
+                <p>security</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right col-lg-5 col-md-6">
+          <form action="" class="book shadow-xxlg p-4">
+            <p class="mb-5">
+              <span style="color: blue">150,000XAF</span>/ month
+            </p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" />
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" />
+            <label for="location">Location:</label>
+            <input type="text" id="location" />
+            <label for="available">Available:</label>
+            <input type="text" id="available" />
+            <label for="job">job:</label>
+            <input type="text" id="job" />
+            <button class="btn py-2" type="submit">Book A meeting</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="container to-know">
+      <h2>Things to know</h2>
+      <div class="row mt-5">
+        <div class="col-3 gry-crl">
+          <p>hot water</p>
+          <p>gate man</p>
+          <p>parking spot</p>
+          <p>security</p>
+        </div>
+        <div class="col-3 gry-crl">
+          <p>hot water</p>
+          <p>gate man</p>
+          <p>parking spot</p>
+          <p>security</p>
+        </div>
+      </div>
+      <script>
+        function hideShowNav() {
+          const nav = document.querySelector('.navs');
+          const menue = document.querySelector('.fa-bars');
+          const close = document.querySelector('.fa-x');
+          nav.classList.toggle('show');
+          menue.classList.toggle('hide-icon');
+          close.classList.toggle('show-icon');
+        }
+      </script>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  <footer class="p-5 bg-primary"></footer>
+</html>
